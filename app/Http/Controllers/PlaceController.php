@@ -14,7 +14,8 @@ class PlaceController extends Controller
      */
     public function index()
     {
-        //
+        $all = Place::all();
+        return $all;
     }
 
     /**
@@ -36,7 +37,7 @@ class PlaceController extends Controller
      */
     public function show(Place $place)
     {
-        //
+        return $place;
     }
 
     /**

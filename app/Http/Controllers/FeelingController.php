@@ -14,7 +14,8 @@ class FeelingController extends Controller
      */
     public function index()
     {
-        //
+        $all = Feeling::all();
+        return $all;
     }
 
     /**
@@ -36,7 +37,7 @@ class FeelingController extends Controller
      */
     public function show(Feeling $feeling)
     {
-        //
+        return $feeling;
     }
 
     /**

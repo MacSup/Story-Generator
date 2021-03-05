@@ -15,6 +15,7 @@ class CreateFeelingsTable extends Migration
     {
         Schema::create('feelings', function (Blueprint $table) {
             $table->id();
+            $table->text('content');
             $table->timestamps();
         });
     }

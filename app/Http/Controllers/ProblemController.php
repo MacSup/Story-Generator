@@ -14,7 +14,8 @@ class ProblemController extends Controller
      */
     public function index()
     {
-        //
+        $all = Problems::all();
+        return $all;
     }
 
     /**
@@ -36,7 +37,7 @@ class ProblemController extends Controller
      */
     public function show(Problem $problem)
     {
-        //
+        return $problem;
     }
 
     /**

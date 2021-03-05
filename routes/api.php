@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::apiResource('feelings', FeelingController::class)->only(['index', 'show']);
+Route::apiResource('places', PlaceController::class)->only(['index', 'show']);
+Route::apiResource('problems', ProblemController::class)->only(['index', 'show']);
